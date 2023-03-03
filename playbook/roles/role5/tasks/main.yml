@@ -1,0 +1,10 @@
+- name: install pip
+  command: yum install pip -y
+
+- name: install NumPy
+  pip:
+    name: NumPy
+
+- name: install Pandas
+  pip:
+    name: Pandas  

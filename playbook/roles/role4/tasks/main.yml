@@ -1,0 +1,7 @@
+- name: install docker in debian 
+  command: apt-get-y install docker
+  when: ansible_os_family== "Debian"
+
+- name: install docker in redhat
+  command: yum install docker -y
+  when: ansible_os_family== "RedHat"

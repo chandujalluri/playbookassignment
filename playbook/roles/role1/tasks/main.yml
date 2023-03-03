@@ -1,0 +1,10 @@
+- name: CREATE 5 USERS ON ALL GROUPS
+  user: name='{{item}}' state=present
+  with_items: 
+          - user1
+          - user2
+          - user3
+          - user4
+          - user5
+
+  
